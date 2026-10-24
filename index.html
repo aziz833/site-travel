@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel | Agence de Voyage & Séjours de Rêve</title>
+    <!-- Google Fonts pour une typographie moderne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome pour de jolies icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Feuille de style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==============================================
+         BARRE DE NAVIGATION (HEADER)
+    =============================================== -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-plane-departure"></i>
+                <span>Tra<span>vel</span></span>
+            </a>
+
+            <!-- Menu de navigation -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#offres" class="nav-link">Offres</a></li>
+                    <li><a href="#avis" class="nav-link">Témoignages</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contact" class="btn btn-primary nav-btn">Réserver</a>
+        </div>
+    </header>
+
+    <!-- ==============================================
+         SECTION ACCUEIL / BANNIÈRE PRINCIPALE (HERO)
+    =============================================== -->
+    <section class="hero" id="accueil">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-compass"></i> Voyagez au bout de vos rêves</span>
+            <h1 class="hero-title">Explorez le monde avec passion et sérénité</h1>
+            <p class="hero-description">
+                Découvrez des destinations paradisiaques, des circuits inoubliables et des séjours sur-mesure aux meilleurs tarifs.
+            </p>
+
+            <!-- Barre de recherche rapide -->
+            <div class="search-box">
+                <form class="search-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-location-dot"></i> Destination</label>
+                        <input type="text" placeholder="Où voulez-vous aller ?">
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-regular fa-calendar-days"></i> Départ</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-users"></i> Voyageurs</label>
+                        <select>
+                            <option value="1">1 Personne</option>
+                            <option value="2" selected>2 Personnes</option>
+                            <option value="3">3-5 Personnes</option>
+                            <option value="group">Groupe (5+)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i> Rechercher
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION DESTINATIONS POPULAIRES
+    =============================================== -->
+    <section class="destinations section" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Envie d'évasion ?</span>
+                <h2 class="section-title">Nos Destinations Populaires</h2>
+                <div class="divider"></div>
+                <p class="section-text">
+                    Laissez-vous tenter par notre sélection des plus beaux endroits de la planète.
+                </p>
+            </div>
+
+            <div class="destinations-grid">
+                <!-- Carte 1 : Santorin -->
+                <div class="card destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=700&q=80" alt="Santorin, Grèce">
+                        <span class="card-price">Dès 599 €</span>
+                        <span class="card-badge"><i class="fa-solid fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Santorin, Grèce</h3>
+                        <p class="card-desc">Maisons blanches emblématiques, falaises volcaniques et couchers de soleil féeriques sur la mer Égée.</p>
+                        <div class="card-info">
+                            <span><i class="fa-regular fa-clock"></i> 7 Jours / 6 Nuits</span>
+                            <span><i class="fa-solid fa-plane"></i> Vol Inclus</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Découvrir le séjour</a>
+                    </div>
+                </div>
+
+                <!-- Carte 2 : Bali -->
+                <div class="card destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=700&q=80" alt="Bali, Indonésie">
+                        <span class="card-price">Dès 890 €</span>
+                        <span class="card-badge"><i class="fa-solid fa-star"></i> 4.8</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Bali, Indonésie</h3>
+                        <p class="card-desc">Temples majestueux, rizières verdoyantes, plages exotiques et accueil chaleureux au paradis tropical.</p>
+                        <div class="card-info">
+                            <span><i class="fa-regular fa-clock"></i> 10 Jours / 9 Nuits</span>
+                            <span><i class="fa-solid fa-hotel"></i> Hôtel 4★</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Découvrir le séjour</a>
+                    </div>
+                </div>
+
+                <!-- Carte 3 : Paris -->
+                <div class="card destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=700&q=80" alt="Paris, France">
+                        <span class="card-price">Dès 350 €</span>
+                        <span class="card-badge"><i class="fa-solid fa-star"></i> 4.7</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Paris, France</h3>
+                        <p class="card-desc">La ville lumière, ses musées légendaires, sa gastronomie réputée et ses balades romantiques le long de la Seine.</p>
+                        <div class="card-info">
+                            <span><i class="fa-regular fa-clock"></i> 4 Jours / 3 Nuits</span>
+                            <span><i class="fa-solid fa-utensils"></i> Petit déjeuner</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Découvrir le séjour</a>
+                    </div>
+                </div>
+
+                <!-- Carte 4 : Tokyo -->
+                <div class="card destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=700&q=80" alt="Tokyo, Japon">
+                        <span class="card-price">Dès 1 150 €</span>
+                        <span class="card-badge"><i class="fa-solid fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Tokyo, Japon</h3>
+                        <p class="card-desc">Entre modernité futuriste et traditions séculaires : gratte-ciels néons, sanctuaires anciens et street food savoureuse.</p>
+                        <div class="card-info">
+                            <span><i class="fa-regular fa-clock"></i> 12 Jours / 11 Nuits</span>
+                            <span><i class="fa-solid fa-train"></i> Pass Inclus</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Découvrir le séjour</a>
+                    </div>
+                </div>
+
+                <!-- Carte 5 : Marrakech -->
+                <div class="card destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=700&q=80" alt="Marrakech, Maroc">
+                        <span class="card-price">Dès 420 €</span>
+                        <span class="card-badge"><i class="fa-solid fa-star"></i> 4.8</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Marrakech, Maroc</h3>
+                        <p class="card-desc">Souks animés, riads authentiques, parfums d'épices et excursions dépaysantes aux portes du désert.</p>
+                        <div class="card-info">
+                            <span><i class="fa-regular fa-clock"></i> 5 Jours / 4 Nuits</span>
+                            <span><i class="fa-solid fa-spa"></i> Riad & Spa</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Découvrir le séjour</a>
+                    </div>
+                </div>
+
+                <!-- Carte 6 : Maldives -->
+                <div class="card destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=700&q=80" alt="Maldives">
+                        <span class="card-price">Dès 1 390 €</span>
+                        <span class="card-badge"><i class="fa-solid fa-star"></i> 5.0</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Maldives</h3>
+                        <p class="card-desc">Eaux turquoises cristallines, bungalows sur pilotis et détente absolue sous le soleil de l'océan Indien.</p>
+                        <div class="card-info">
+                            <span><i class="fa-regular fa-clock"></i> 8 Jours / 7 Nuits</span>
+                            <span><i class="fa-solid fa-umbrella-beach"></i> All Inclusive</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Découvrir le séjour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION POURQUOI NOUS CHOISIR (SERVICES)
+    =============================================== -->
+    <section class="services section bg-light" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nos Engagements</span>
+                <h2 class="section-title">Pourquoi Choisir Travel ?</h2>
+                <div class="divider"></div>
+                <p class="section-text">
+                    Nous vous accompagnons à chaque étape pour transformer votre voyage en un moment magique.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <h3 class="service-title">Meilleur Prix Garanti</h3>
+                    <p class="service-desc">
+                        Des tarifs négociés sans intermédiaire pour vous garantir les prix les plus justes du marché.
+                    </p>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="service-title">Assistance 24h/24 & 7j/7</h3>
+                    <p class="service-desc">
+                        Une équipe dévouée et disponible avant, pendant et après votre voyage pour voyager l'esprit libre.
+                    </p>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="service-title">Paiement 100% Sécurisé</h3>
+                    <p class="service-desc">
+                        Options de paiement simples, flexibles et sécurisées avec possibilité de règlement en plusieurs fois.
+                    </p>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="service-title">Itinéraires Sur-Mesure</h3>
+                    <p class="service-desc">
+                        Des séjours personnalisés selon vos envies, votre rythme et votre budget par nos conseillers experts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION BANNIÈRE PROMO / OFFRES SPÉCIALES
+    =============================================== -->
+    <section class="promo section" id="offres">
+        <div class="container">
+            <div class="promo-banner">
+                <div class="promo-content">
+                    <span class="promo-tag">Offre Limitée de Saison</span>
+                    <h2 class="promo-title">Jusqu'à -30% sur vos vacances d'été !</h2>
+                    <p class="promo-text">
+                        Réservez avant la fin du mois et bénéficiez de réductions exclusives sur une sélection de plus de 50 destinations ensoleillées.
+                    </p>
+                    <a href="#contact" class="btn btn-light">Profiter de l'offre</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION TÉMOIGNAGES (AVIS CLIENTS)
+    =============================================== -->
+    <section class="testimonials section" id="avis">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Leur Expérience</span>
+                <h2 class="section-title">Ce Que Disent Nos Voyageurs</h2>
+                <div class="divider"></div>
+                <p class="section-text">
+                    La satisfaction de nos clients est notre plus belle récompense.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Avis 1 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        « Notre voyage à Santorin s'est déroulé à la perfection ! Hôtel magnifique, vue imprenable et conseils au top. Merci à Travel ! »
+                    </p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Sarah L." class="client-avatar">
+                        <div>
+                            <h4 class="client-name">Sarah Lefebvre</h4>
+                            <span class="client-destination">Séjour en Grèce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avis 2 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        « Premier grand voyage en Asie à Bali en famille. L'équipe a géré tous les transferts et visites. Zéro stress, que du bonheur ! »
+                    </p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Karim B." class="client-avatar">
+                        <div>
+                            <h4 class="client-name">Karim Benali</h4>
+                            <span class="client-destination">Séjour en Indonésie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avis 3 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        « Rapport qualité-prix imbattable pour un weekend tout compris à Marrakech. Organisation irréprochable et équipe très chaleureuse. »
+                    </p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Élodie M." class="client-avatar">
+                        <div>
+                            <h4 class="client-name">Élodie Mercier</h4>
+                            <span class="client-destination">Séjour au Maroc</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION CONTACT & RÉSERVATION
+    =============================================== -->
+    <section class="contact section bg-light" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Prêt à partir ?</span>
+                <h2 class="section-title">Contactez Notre Équipe</h2>
+                <div class="divider"></div>
+                <p class="section-text">
+                    Remplissez ce formulaire et un de nos experts voyage vous répondra sous 24h.
+                </p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <h3>Discutons de votre projet</h3>
+                    <p>Passez nous voir en agence ou contactez-nous par téléphone ou email pour un devis personnalisé sans engagement.</p>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>12 Avenue de la Liberté, 75001 Paris, France</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@travel.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>Horaires d'ouverture</h4>
+                            <p>Lundi - Samedi : 09h00 - 19h00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact / réservation -->
+                <div class="contact-form-container">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Merci pour votre message ! Notre équipe vous contactera très rapidement.');">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom complet *</label>
+                                <input type="text" id="nom" placeholder="Ex: Jean Dupont" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse Email *</label>
+                                <input type="email" id="email" placeholder="Ex: jean.dupont@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" id="telephone" placeholder="Ex: 06 12 34 56 78">
+                            </div>
+                            <div class="form-group">
+                                <label for="destination-choix">Destination souhaitée</label>
+                                <input type="text" id="destination-choix" placeholder="Ex: Santorin, Grèce">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Votre projet de voyage *</label>
+                            <textarea id="message" rows="4" placeholder="Dates prévues, nombre de personnes, type d'activités, budget approximatif..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Envoyer ma demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         PIED DE PAGE (FOOTER)
+    =============================================== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <span>Tra<span>vel</span></span>
+                </a>
+                <p class="footer-desc">
+                    Votre partenaire de confiance pour des vacances inoubliables. Découvrez le monde avec tranquillité et confort.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Liens Rapides</h4>
+                <ul class="footer-links">
+                    <li><a href="#accueil"><i class="fa-solid fa-angle-right"></i> Accueil</a></li>
+                    <li><a href="#destinations"><i class="fa-solid fa-angle-right"></i> Destinations</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Nos Services</a></li>
+                    <li><a href="#offres"><i class="fa-solid fa-angle-right"></i> Offres Spéciales</a></li>
+                    <li><a href="#avis"><i class="fa-solid fa-angle-right"></i> Avis Voyageurs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Destinations Top</h4>
+                <ul class="footer-links">
+                    <li><a href="#destinations"><i class="fa-solid fa-angle-right"></i> Grèce & Îles Cyclades</a></li>
+                    <li><a href="#destinations"><i class="fa-solid fa-angle-right"></i> Bali & Asie du Sud-Est</a></li>
+                    <li><a href="#destinations"><i class="fa-solid fa-angle-right"></i> Îles Maldives</a></li>
+                    <li><a href="#destinations"><i class="fa-solid fa-angle-right"></i> Japon & Tokyo</a></li>
+                    <li><a href="#destinations"><i class="fa-solid fa-angle-right"></i> Maroc & Égypte</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Newsletter</h4>
+                <p class="footer-desc">Recevez en avant-première nos meilleures offres et promotions exclusives.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci de votre inscription à notre newsletter !');">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 Travel. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions Légales</a>
+                    <span>•</span>
+                    <a href="#">Politique de Confidentialité</a>
+                    <span>•</span>
+                    <a href="#">Conditions Générales de Vente</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
